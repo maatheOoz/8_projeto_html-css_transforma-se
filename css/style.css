@@ -232,6 +232,108 @@ header .bx-menu {
     font-size: 16px;
 }
 
+.products .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.products .box-container .box {
+    flex: 1 1 30rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,.1);
+    border-radius: 8px;
+    border: 2px solid rgba(0,0,0,.1);
+    position: relative;
+}
+
+.products .box-container .box .discount {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 5px 8px;
+    font-size: 24px;
+    color: var(--red);
+    background: rgba(255, 51, 153, .05);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.products .box-container .box .image {
+    position: relative;
+    text-align: center;
+    padding-top: 48px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.products .box-container .box .image img {
+    height: 45rem;
+}
+
+.products .box-container .box:hover .image img {
+    transform: scale(1.1);
+}
+
+.products .box-container .box .image .icons {
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+.products .box-container .box:hover .image .icons {
+    bottom: 0;
+}
+
+.products .box-container .box .image .icons a {
+    height: 50px;
+    line-height: 50px;
+    font-size: 28px;
+    width: 50%;
+    background: var(--red);
+    color: #fff;
+}
+
+.products .box-container .box .image .icons .cart-btn {
+    border-left: 2px solid #fff7;
+    border-right: 2px solid #fff7;
+    width: 100%;
+}
+
+.products .box-container .box .image .icons a:hover {
+    background-color: #333;
+}
+
+.products .box-container .box .content {
+    padding: 32px;
+    text-align: center;
+}
+
+.products .box-container .box .content h3 {
+    font-size: 38px;
+    color: #333;
+}
+
+.products .box-container .box .content h4 {
+    font-size: 28px;
+    color: var(--red);
+}
+
+.products .box-container .box .content .price {
+    font-size: 18px;
+    color: #000;
+    font-weight: bolder;
+    padding-top: 16px;
+}
+
+.products .box-container .box .content .price span {
+    font-size: 12px;
+    color: #999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
 
 
 
